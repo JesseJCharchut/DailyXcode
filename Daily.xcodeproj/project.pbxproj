@@ -3,14 +3,16 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3B04AEB625BC837400EEEEEE /* FacebookLogin in Frameworks */ = {isa = PBXBuildFile; productRef = 3B04AEB525BC837400EEEEEE /* FacebookLogin */; };
+		3B04AEB825BC837400EEEEEE /* FacebookShare in Frameworks */ = {isa = PBXBuildFile; productRef = 3B04AEB725BC837400EEEEEE /* FacebookShare */; };
 		3B8A62E225B9F7D5008DE0C0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B8A62E125B9F7D5008DE0C0 /* AppDelegate.swift */; };
 		3B8A62E425B9F7D5008DE0C0 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B8A62E325B9F7D5008DE0C0 /* SceneDelegate.swift */; };
-		3B8A62E625B9F7D5008DE0C0 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B8A62E525B9F7D5008DE0C0 /* ViewController.swift */; };
-		3B8A62E925B9F7D5008DE0C0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3B8A62E725B9F7D5008DE0C0 /* Main.storyboard */; };
+		3B8A62E625B9F7D5008DE0C0 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B8A62E525B9F7D5008DE0C0 /* LoginViewController.swift */; };
+		3B8A62E925B9F7D5008DE0C0 /* Login.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3B8A62E725B9F7D5008DE0C0 /* Login.storyboard */; };
 		3B8A62EB25B9F7D9008DE0C0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3B8A62EA25B9F7D9008DE0C0 /* Assets.xcassets */; };
 		3B8A62EE25B9F7D9008DE0C0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3B8A62EC25B9F7D9008DE0C0 /* LaunchScreen.storyboard */; };
 		3B8A62F925B9F7D9008DE0C0 /* DailyTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B8A62F825B9F7D9008DE0C0 /* DailyTests.swift */; };
@@ -38,8 +40,8 @@
 		3B8A62DE25B9F7D5008DE0C0 /* Daily.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Daily.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3B8A62E125B9F7D5008DE0C0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		3B8A62E325B9F7D5008DE0C0 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		3B8A62E525B9F7D5008DE0C0 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		3B8A62E825B9F7D5008DE0C0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		3B8A62E525B9F7D5008DE0C0 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		3B8A62E825B9F7D5008DE0C0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Login.storyboard; sourceTree = "<group>"; };
 		3B8A62EA25B9F7D9008DE0C0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		3B8A62ED25B9F7D9008DE0C0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		3B8A62EF25B9F7D9008DE0C0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -56,6 +58,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3B04AEB825BC837400EEEEEE /* FacebookShare in Frameworks */,
+				3B04AEB625BC837400EEEEEE /* FacebookLogin in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -101,8 +105,8 @@
 			children = (
 				3B8A62E125B9F7D5008DE0C0 /* AppDelegate.swift */,
 				3B8A62E325B9F7D5008DE0C0 /* SceneDelegate.swift */,
-				3B8A62E525B9F7D5008DE0C0 /* ViewController.swift */,
-				3B8A62E725B9F7D5008DE0C0 /* Main.storyboard */,
+				3B8A62E525B9F7D5008DE0C0 /* LoginViewController.swift */,
+				3B8A62E725B9F7D5008DE0C0 /* Login.storyboard */,
 				3B8A62EA25B9F7D9008DE0C0 /* Assets.xcassets */,
 				3B8A62EC25B9F7D9008DE0C0 /* LaunchScreen.storyboard */,
 				3B8A62EF25B9F7D9008DE0C0 /* Info.plist */,
@@ -144,6 +148,10 @@
 			dependencies = (
 			);
 			name = Daily;
+			packageProductDependencies = (
+				3B04AEB525BC837400EEEEEE /* FacebookLogin */,
+				3B04AEB725BC837400EEEEEE /* FacebookShare */,
+			);
 			productName = Daily;
 			productReference = 3B8A62DE25B9F7D5008DE0C0 /* Daily.app */;
 			productType = "com.apple.product-type.application";
@@ -215,6 +223,9 @@
 				Base,
 			);
 			mainGroup = 3B8A62D525B9F7D5008DE0C0;
+			packageReferences = (
+				3B04AEB425BC837400EEEEEE /* XCRemoteSwiftPackageReference "facebook-ios-sdk" */,
+			);
 			productRefGroup = 3B8A62DF25B9F7D5008DE0C0 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -233,7 +244,7 @@
 			files = (
 				3B8A62EE25B9F7D9008DE0C0 /* LaunchScreen.storyboard in Resources */,
 				3B8A62EB25B9F7D9008DE0C0 /* Assets.xcassets in Resources */,
-				3B8A62E925B9F7D5008DE0C0 /* Main.storyboard in Resources */,
+				3B8A62E925B9F7D5008DE0C0 /* Login.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -258,7 +269,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3B8A62E625B9F7D5008DE0C0 /* ViewController.swift in Sources */,
+				3B8A62E625B9F7D5008DE0C0 /* LoginViewController.swift in Sources */,
 				3B8A62E225B9F7D5008DE0C0 /* AppDelegate.swift in Sources */,
 				3B8A62E425B9F7D5008DE0C0 /* SceneDelegate.swift in Sources */,
 			);
@@ -296,12 +307,12 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		3B8A62E725B9F7D5008DE0C0 /* Main.storyboard */ = {
+		3B8A62E725B9F7D5008DE0C0 /* Login.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
 				3B8A62E825B9F7D5008DE0C0 /* Base */,
 			);
-			name = Main.storyboard;
+			name = Login.storyboard;
 			sourceTree = "<group>";
 		};
 		3B8A62EC25B9F7D9008DE0C0 /* LaunchScreen.storyboard */ = {
@@ -318,7 +329,7 @@
 		3B8A630625B9F7DA008DE0C0 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ALWAYS_SEARCH_USER_PATHS = NO;
+				ALWAYS_SEARCH_USER_PATHS = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
@@ -379,7 +390,7 @@
 		3B8A630725B9F7DA008DE0C0 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ALWAYS_SEARCH_USER_PATHS = NO;
+				ALWAYS_SEARCH_USER_PATHS = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
@@ -593,6 +604,30 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		3B04AEB425BC837400EEEEEE /* XCRemoteSwiftPackageReference "facebook-ios-sdk" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/facebook/facebook-ios-sdk";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 9.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		3B04AEB525BC837400EEEEEE /* FacebookLogin */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 3B04AEB425BC837400EEEEEE /* XCRemoteSwiftPackageReference "facebook-ios-sdk" */;
+			productName = FacebookLogin;
+		};
+		3B04AEB725BC837400EEEEEE /* FacebookShare */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 3B04AEB425BC837400EEEEEE /* XCRemoteSwiftPackageReference "facebook-ios-sdk" */;
+			productName = FacebookShare;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 3B8A62D625B9F7D5008DE0C0 /* Project object */;
 }
